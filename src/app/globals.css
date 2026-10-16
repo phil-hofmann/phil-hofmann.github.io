@@ -1,0 +1,38 @@
+/* globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-foreground;
+}
+
+body {
+  @apply flex min-h-screen flex-col text-foreground text-base;
+  min-height: 100dvh;
+  font-family: "Avenir", sans-serif;
+}
+
+body > header,
+body > footer {
+  flex-shrink: 0;
+}
+
+h1,
+h2,
+h3 {
+  @apply text-lg my-2.5 leading-8 tracking-widest;
+}
+
+h1 {
+  @apply font-bold uppercase;
+}
+
+h2 {
+  @apply font-bold;
+}
+
+h3 {
+  @apply font-normal;
+}
